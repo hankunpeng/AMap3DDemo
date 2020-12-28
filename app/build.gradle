@@ -15,7 +15,7 @@ dependencies {
 
 android {
     compileSdkVersion 29
-    buildToolsVersion '29.0.2'
+    buildToolsVersion '29.0.3'
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 29
@@ -41,6 +41,12 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+    }
+
+    signingConfigs{
+        debug {
+            storeFile file('../debug.keystore')
+        }
     }
 }
 
