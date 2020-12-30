@@ -43,9 +43,18 @@ android {
         release.setRoot('build-types/release')
     }
 
-    signingConfigs{
+    signingConfigs {
         debug {
-            storeFile file('../debug.keystore')
+            storeFile file('../keystore/demo.keystore')
+            storePassword 'Faw-C229-IVI-797708@faurecia.com'
+            keyAlias = 'alias'
+            keyPassword 'Faw-C229-IVI-797708@faurecia.com'
+        }
+        release {
+            storeFile file('../keystore/demo.keystore')
+            storePassword 'Faw-C229-IVI-797708@faurecia.com'
+            keyAlias = 'alias'
+            keyPassword 'Faw-C229-IVI-797708@faurecia.com'
         }
     }
 }
