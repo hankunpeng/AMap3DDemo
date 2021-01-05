@@ -16,6 +16,11 @@ dependencies {
 android {
     compileSdkVersion 29
     buildToolsVersion '29.0.3'
+
+    // https://developer.android.google.cn/studio/projects/install-ndk
+    // 就当前 Project 而言，也可以不显式指定 NDK 版本。
+    ndkVersion '21.3.6528147'
+
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 29
